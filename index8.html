@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/in_park.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var data = temp[1].split("/");
+		var ghrkaeh = data[0] * 1;
+		var content_flow = ["왜그랬어! 그래도 솔직하게 말해줘서 고마워. 같이 찾아보자", "진심이야? 나 짬뽕만 먹는거 잊었지!!!", "오~~ 마침 먹고싶었는데! 좋아", "헐.. 진짜 좋아!!! 나 삼겹살 안먹은지 한참 됐잖아"];
+
+
+		function contentFlow(){
+		if(data[1] == 1){
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[0];
+			ghrkaeh -= 5;
+		}
+		if(data[1] == 2){
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[1];
+			ghrkaeh -= 10;
+		}
+		if(data[1] == 3){
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[2];
+			ghrkaeh += 7;
+		}
+		if(data[1] == 4){
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[3];
+			ghrkaeh += 10;
+		}
+		}
+		function next(){
+			location.href = "index9.html?" + ghrkaeh;
+		}
+		
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div class = "select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent"> </p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="next()">next</button>
+
+		</div>
+
+	</body>
+</html>

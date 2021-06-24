@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/cafe.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var ghrkaeh = temp[1] * 1;
+		var content_flow = ["나 잠깐 화장실좀 갔다올게!", "그래 갔다 와! (여주가 돌아오면 고백해야지..!)", "[그리고 그녀는 돌아오지않았다.]"];
+		var i = 0;
+
+		function contentFlow(){
+			if(i == 0){
+				document.getElementById("ccontent").style.color = "#ff00dd";
+			}
+			if(i == 1){
+				document.getElementById("ccontent").style.color = "blue";
+			}
+			if(i == 2){
+				document.getElementById("ccontent").style.color = "black";
+			}
+			if(i == 3){
+				location.href = "fail.html";
+			}
+		document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[i];
+		i++;
+		
+		}
+
+
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div class="select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent">asdf</p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="contentFlow()">next</button>
+			<script></script>
+		</div>
+
+		
+
+	</body>
+</html>

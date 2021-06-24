@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/school.css">
+		<script>
+			var temp = location.href.split("?");
+			var ghrkaeh = temp[1] * 1;
+
+			function asdf1(){
+				location.href = "index11.html?" + ghrkaeh + "/" + 1;
+			}
+			function asdf2(){
+				location.href = "index11.html?" + ghrkaeh + "/" + 2;
+			}
+			function asdf3(){
+				location.href = "index11.html?" + ghrkaeh + "/" + 3;
+			}
+
+		</script>
+    </head>
+
+    <body onload = "contentFlow()" class="bgimg">
+		<div class="select">
+			<br>
+			<br>
+			<a><h1 class="contents" onclick="asdf1()"> &nbsp;&nbsp;&nbsp;1.그래야 형평성에 맞지 않을까.. 나라면 0점 처리했을 거 같아.</h1></a>
+			<a><h1 class="contents" onclick="asdf2()"> &nbsp;&nbsp;&nbsp;2.(그 교수님 좋은 분이신데..)여주 기분 많이 안좋았겠네.. 너만 있는 수업도 아니니까 교수님도 어쩔 수 없으셨을거야.</h1></a>
+			<a><h1 class="contents" onclick="asdf3()"> &nbsp;&nbsp;&nbsp;3.(어떻게 우리 사랑스러운 여주의 점수를 깎을 수 있지?!) 당장 그 교수한테 가자. 내가 혼내줄게</h1></a>
+		</div>
+	</body>
+</html>

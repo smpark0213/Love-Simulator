@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head><style>@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&family=Nanum+Gothic&family=Single+Day&display=swap'); 
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFD9E4;
+  font-family: 'Oswald', sans-serif;
+	
+}
+div {margin-top: 200px; }
+.a{font-size: 80px; font-family: 'Single Day', cursive;}
+.b {margin-left: 100px;}
+.button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px red;
+  color: #000;
+}
+
+.button:after {
+  content: "";
+  background: #FF9E9B;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button:focus { outline:0; }
+
+.bgm { display: none ;
+			text-align: right;}
+
+
+</style>
+<script>
+  function func(){
+    newWindow = window.open("index.html");
+  }
+</script>
+ </head>
+ <body>
+	<div>
+		<audio autoplay controls class="bgm"> <source src="bgm/bgm.mp3" type="audio/mp3"> </audio>
+		<div class="a">연애 해봤니?</div>
+		<div class="b"><button class="button" onclick = "func()">start</button></div>
+		<br>*이 게임은 Microsoft Edge에 최적화 되있습니다*<br>*F11을 눌러 전체화면을 실행시켜주세요*
+	</div>
+</body>
+</html>

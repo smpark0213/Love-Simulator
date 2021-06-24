@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/eat.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var data = temp[1].split("/");
+		var ghrkaeh = data[0] * 1;
+		var content_flow = ["날씨가 좋긴 한데.. 여기는 좀 덥다.", "오~ 센스 좋은데! 나 구석자리 좋아하는건 어떻게 알았대", "여긴 너무 시선집중 아니야? 다른자리도 많은데.."];
+
+
+		function contentFlow(){
+			document.getElementById("ccontent").style.color = "#e702fc";
+		if(data[1] == 1){
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[0];
+			ghrkaeh += 7;
+		}
+		if(data[1] == 2){
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[1];
+			ghrkaeh += 15;
+		}
+		if(data[1] == 3){
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[2];
+			ghrkaeh -= 5;
+		}
+		}
+		function next(){
+			location.href = "index15.html?" + ghrkaeh;
+		}
+		
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div class = "select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent"> </p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="next()">next</button>
+
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/in_park.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var ghrkaeh = temp[1] * 1;
+		var content_flow = ["오늘 맛있는 집 많이 찾아놨다며! 어디야??", "(맞다.. 어제 찾아보려던걸 귀찮아서 자버렸네.. 어떡하지??)"];
+		var i = 0;
+
+		function contentFlow(){
+			if(i == 1){
+				document.getElementById("ccontent").style.color = "#0004ff7a";
+			}
+			if(i == 2){
+				location.href = "index7.html?" + ghrkaeh;
+			}
+		document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[i];
+		i++;
+		
+		}
+
+
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div class="select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent">asdf</p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="contentFlow()">next</button>
+			<script></script>
+		</div>
+
+		
+
+	</body>
+</html>

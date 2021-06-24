@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/school.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var ghrkaeh = temp[1] * 1;
+		var content_flow = ["오늘수업 어땠어?", "아니.. 내가 전에 말했던 이상한 교수님 기억나??","과제 제출 한번 늦어서 메일로 사정사정을 했는데 점수를 깎은거야!!! ","겨우 5분 늦었다고 그러는게 말이 돼?", "(여주가 잘못한거 같은데.. 어떻게 말해줘야하지?)"];
+		var i = 0;
+
+		function contentFlow(){
+			if(i == 1) {
+				document.getElementById("ccontent").style.color = "#e702fc";
+			}
+			if(i == 4){
+				document.getElementById("ccontent").style.color = "#0004ff7a";
+			}
+			if(i == 5){
+				location.href = "index10.html?" + ghrkaeh;
+			}
+			document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[i];
+			i++;
+		}
+
+		
+		
+		
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div class = "select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent"> </p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="contentFlow()">next</button>
+
+		</div>
+
+	</body>
+</html>

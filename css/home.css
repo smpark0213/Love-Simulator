@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&family=Nanum+Gothic&family=Single+Day&display=swap'); 
+
+    p.typing-txt {
+      display: none;
+      font: size 35px;
+    }
+    
+    .typing {
+      display: inline-block;
+      animation-name: cursor;
+      animation-duration: 0.3s;
+      animation-iteration-count: infinite;
+      border-right: 1px solid #ccc;
+      font-size: 35px;
+      font-weight: 900;
+      vertical-align: middle;
+      color: darkblue;
+      
+    }
+    
+    @keyframes cursor {
+      0% {
+        border-right: 1px solid #fff;
+      }
+      50% {
+        border-right: 1px solid #000;
+      }
+      100% {
+        border-right: 1px solid #fff;
+      }
+    }
+        .bgimg {
+            border: 0;
+            padding: 0; 
+            background-image: url('image/black.png');
+            min-height: 100%;
+            background-size: cover;
+        }
+		.in {
+			background-image: url(image/sub.png);
+			margin-top: 700px;
+			margin-left: 90px;
+			height: 389px;
+			width: 1838px;
+			
+
+			}
+		.select {
+			background-image: url(image/sub.png);
+			margin-top: 700px;
+			margin-left: 90px;
+			height: 389px;
+			width: 1838px;
+			
+
+			}
+			.contents:hover{ color: #ff7394; }
+
+			.contents{
+				font: size 35px;
+				vertical-align:middle;
+				color: white;}
+			a { text-decoration:none } 
+			.bgm { display: block;
+			text-align: right;}
+			button {
+			
+			border: solid;
+			background-color:#fff;
+            border-radius: 15px;
+			font-size: 30px;
+			}
+
+
+ 			button:hover {
+			background-color: #f3fc49;
+			border-radius: 15px;
+}

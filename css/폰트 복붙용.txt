@@ -1,0 +1,4 @@
+font-family: 'Cute Font', cursive;
+font-family: 'Gamja Flower', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Single Day', cursive;

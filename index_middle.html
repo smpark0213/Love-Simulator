@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/cafe.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var ghrkaeh = temp[1] * 1;
+		var content_flow = ["여주야 우리 오늘부터 그냥 1일 할까..?", "그럴까?"];
+		var i = 0;
+
+		function contentFlow(){
+			if(i == 0){
+				document.getElementById("ccontent").style.color = "blue";
+			}
+			if(i == 1){
+				document.getElementById("ccontent").style.color = "#ff00dd";
+			}
+			if(i == 2){
+				location.href = "success1.html"; //마톡프로핑화면 D+1
+			}
+		document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[i];
+		i++;
+		
+		}
+
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div class="select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent">asdf</p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="contentFlow();">next</button>
+			<script></script>
+		</div>
+
+		
+
+	</body>
+</html>

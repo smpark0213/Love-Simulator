@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/eat.css">
+		<script>
+			var temp = location.href.split("?");
+			var ghrkaeh = temp[1] * 1;
+
+			function asdf1(){
+				location.href = "index14.html?" + ghrkaeh + "/" + 1;
+			}
+			function asdf2(){
+				location.href = "index14.html?" + ghrkaeh + "/" + 2;
+			}
+			function asdf3(){
+				location.href = "index14.html?" + ghrkaeh + "/" + 3;
+			}
+
+		</script>
+    </head>
+
+    <body onload = "contentFlow()" class="bgimg">
+		<div class="select">
+			<br>
+			<br>
+			<a><h1 class="contents" onclick="asdf1()"> &nbsp;&nbsp;&nbsp;1. (여주가 좋다고 했으니 햇빛이 바로 드는 자리에 앉아야지!)</h1></a>
+			<a><h1 class="contents" onclick="asdf2()"> &nbsp;&nbsp;&nbsp;2. (햇빛이 좋긴 한데 너무 직사광선은 좀 그렇지 않을까.. 약간 구석으로 가야겠다.)</h1></a>
+			<a><h1 class="contents" onclick="asdf3()"> &nbsp;&nbsp;&nbsp;3.  (중앙자리도 나쁘지 않은데. 햇빛도 적당히 드는거 같고. 너무 중앙이긴 하지만.. 괜찮겠지!)</h1></a>
+		</div>
+	</body>
+</html>

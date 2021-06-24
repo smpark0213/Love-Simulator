@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Gamja+Flower&family=Nanum+Gothic&family=Single+Day&display=swap'); 
+      
+	
+	
+
+		p.typing-txt{
+		position:relative;
+		display: inline-block;
+		font-size: 50px;
+		color: blue;
+		font-family: 'Cute Font';
+		height: 55px; overflow: hidden;
+		animation: typingAni 5s steps(100, end);
+		}
+		
+		@keyframes typingAni {
+		  0%{width:0%}
+		  100%{width: 1000px};
+		}
+        .bgimg {
+            border: 0;
+            padding: 0; 
+            background-image: url('image/eat1.png');
+            min-height: 100%;
+            background-size: cover;
+        }
+		.in {
+			background-image: url(image/sub.png);
+			margin-top: 700px;
+			margin-left: 90px;
+			height: 389px;
+			width: 1838px;
+			
+
+			}
+		.select {
+			background-image: url(image/sub.png);
+			margin-top: 700px;
+			margin-left: 90px;
+			height: 389px;
+			width: 1838px;
+			
+
+			}
+			.contents:hover{ color: #ff7394; }
+
+			.contents{
+				font: size 35px;
+				vertical-align:middle;
+				color: blue;}
+			a { text-decoration:none } 
+			.bgm { display: block;
+			text-align: right;}
+			button {
+			
+			border: solid;
+			background-color:#fff;
+            border-radius: 15px;
+			font-size: 30px;
+			}
+
+
+ 			button:hover {
+			background-color: #f3fc49;
+			border-radius: 15px;
+}

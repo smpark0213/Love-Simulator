@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/in_park.css">
+		<script>
+			var temp = location.href.split("?");
+			var ghrkaeh = temp[1] * 1;
+
+			function asdf1(){
+				location.href = "index8.html?" + ghrkaeh + "/" + 1;
+			}
+			function asdf2(){
+				location.href = "index8.html?" + ghrkaeh + "/" + 2;
+			}
+			function asdf3(){
+				location.href = "index8.html?" + ghrkaeh + "/" + 3;
+			}
+			function asdf4(){
+				location.href = "index8.html?" + ghrkaeh + "/" + 4;
+			}
+
+		</script>
+    </head>
+
+    <body onload = "contentFlow()" class="bgimg">
+		<div class="select">
+			<br>
+			<br>
+			<a><h1 class="contents" onclick="asdf1()"> &nbsp;&nbsp;&nbsp;1.(에잇 몰라! 솔직하게 말하자) 미안 어제 잠들어서 못찾아봤어..ㅠ</h1></a>
+			<a><h1 class="contents" onclick="asdf2()"> &nbsp;&nbsp;&nbsp;2.(우리 어머니는 짜장면을 좋아하시니까...) 짜장면 어때??</h1></a>
+			<a><h1 class="contents" onclick="asdf3()"> &nbsp;&nbsp;&nbsp;3.(드라마에서는 항상 레스토랑을 가던데) 레스토랑으로 가자!</h1></a>
+			<a><h1 class="contents" onclick="asdf4()"> &nbsp;&nbsp;&nbsp;4.(한국이늬 소울푸드!! 역시 삼겹살이지) 이런날은 역시 삼겹살이지!</h1></a>
+		</div>
+	</body>
+</html>

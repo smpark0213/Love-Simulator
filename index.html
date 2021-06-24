@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/in_room.css">
+    </head>
+	<script>
+		var content_flow = ["(내일은 드디어 그녀에게 데이트하는 날...!)", "(깨똑!)"];
+		var i = 0;
+
+		function contentFlow(){
+			if(i == 1){
+				document.getElementById("zkxhr").play();
+			}
+
+			if(i == 2){
+				location.href = "index1.html";
+			}
+		document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[i];
+		i++;
+		
+		}
+
+
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+		<audio id="zkxhr">
+			<source src="bgm/zkxhr.mp3" />
+		</audio>
+
+   		<div class="select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent">asdf</p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="contentFlow()">next</button>
+			<script></script>
+		</div>
+
+		
+
+	</body>
+</html>

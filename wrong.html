@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/in_park.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var ghrkaeh = temp[1] * 1;
+		var ring1 = 0;
+		var cloth1 = 0;
+		var pin1 = 0;
+		var necklace1 = 0;
+		var count = 0;
+
+		function ring(){
+			if(ring1 == 0){
+				count++;
+				ring1++;
+			}
+		}
+
+		function cloth(){
+			if(cloth1 == 0){
+				count++;
+				cloth1++;
+			}
+		}
+
+		function pin(){
+			if(pin1 == 0){
+				count++;
+				pin1++;
+			}
+		}
+
+		function necklace(){
+			if(necklace1 == 0){
+				count++;
+				necklace1++;
+			}
+			
+		}
+		
+	</script>
+
+    <body>
+		<script>
+		alert("제한시간 10초");
+		setTimeout(function result(){
+			alert(count + "개 찾음");
+
+			if(count == 0){
+				location.href = "index5.html?" + ghrkaeh +"/" + 0;
+			}
+
+			if(count == 1 || count == 2){
+				location.href = "index5.html?" + ghrkaeh +"/" + 1;
+			}
+
+			if(count == 3){
+				ghrkaeh += 7;
+				location.href = "index5.html?" + ghrkaeh +"/" + 2;
+			}
+
+			if(count == 4){
+				ghrkaeh += 15;
+				location.href = "index5.html?" + ghrkaeh +"/" + 3;
+			}
+		}, 10000);
+		</script>
+	
+		<img src="image/wrong.png" alt="error" usemap="#map">
+	
+		<map name="map">
+			<area shape="rect" coords="880, 410, 910, 440" href="#" onclick="ring()" alt="ring">
+			<area shape="rect" coords="965, 275, 1010, 300" href="#" onclick="cloth()" alt="cloth">
+			<area shape="rect" coords="1000, 150, 1020, 170" href="#" onclick="pin()" alt="pin">
+			<area shape="rect" coords="975, 230, 1020, 250" href="#" onclick="necklace()" alt="necklace">
+
+		</map>
+
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/cafe.css">
+    </head>
+	<script>
+		var temp = location.href.split("?");
+		var ghrkaeh = temp[1] * 1;
+		var content_flow = ["나 할말 있어..", "응? 뭔데?", "우린 운명인거 같아. 나 어때?"];
+		var i = 0;
+
+		function contentFlow(){
+			if(i == 0 || i ==2){
+				document.getElementById("ccontent").style.color = "#ff00dd";
+			}
+			if(i == 1){
+				document.getElementById("ccontent").style.color = "blue";
+			}
+			if(i == 3){
+				location.href = "success2.html"; //앉아있는 연인 모습
+			}
+		document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[i];
+		i++;
+		
+		}
+
+
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div class="select">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent">asdf</p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="contentFlow()">next</button>
+			<script></script>
+		</div>
+
+		
+
+	</body>
+</html>

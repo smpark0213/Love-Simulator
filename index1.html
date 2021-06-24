@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>couple?</title>
+		<meta name="author" content="WebProgramming Group D">
+        <link rel="stylesheet" type="text/css" href="css/kako1.css">
+    </head>
+	<script>
+		var content_flow = [" ", "ㅇ..옷을 골라달라고..?", "[옷을 골라주자]"];
+		var i = 0;
+
+		function contentFlow(){
+			if(i == 1){
+				var x = document.getElementById("spah");
+				x.style.backgroundImage = "url(image/sub.png)";
+				x.style.marginTop = "700px";
+				x.style.marginLeft = "90px";
+				x.style.height = "389px";
+				x.style.width = "1838px";
+			}
+			if(i == 3){
+				location.href = "index2.html";
+			}
+
+		document.getElementById("ccontent").innerHTML =" &nbsp;&nbsp;&nbsp;&nbsp;" + content_flow[i];
+		i++;
+		//setTimeout(function asdf(){document.getElementById("content").innerHTML = content_flow[i];}, 4000);
+		}
+
+
+	</script>
+
+    <body onload = "contentFlow()" class="bgimg">
+
+   		<div id = "spah">
+			<br>
+			<div>
+				<p class="typing-txt" id="ccontent"> </p>
+			</div>
+		</div>
+		<div style="position: absolute; right: 250px; bottom: 140px;">
+			<button onclick="contentFlow()">next</button>
+			<script></script>
+		</div>
+
+		
+
+	</body>
+</html>
